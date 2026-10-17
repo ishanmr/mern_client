@@ -7,19 +7,19 @@ import TeacherScreen from './screens/TeacherScreen'
 import StaffScreen from './screens/StaffScreen'
 
 function App() {
-  return (
-    
+  return (  
+    <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<AppLayout />}> 
+          <Route path='/' element={<AppLayout />}>
             <Route index element={<DashboardScreen />}></Route>
-            <Route path='/student' element={< StudentScreen />}> </Route>
-            <Route path='/teacher' element={< TeacherScreen />}> </Route>
-            <Route path='/staff' element={< StaffScreen />}> </Route>
-            </Route>
+            <Route path='/student' element={<StudentScreen />}></Route>
+            <Route path='/teacher' element={<TeacherScreen />}></Route>
+            <Route path='/staff' element={<StaffScreen />}></Route>
+          </Route>
         </Routes>
       </BrowserRouter>
- 
+    </div>
   )
 }
 
